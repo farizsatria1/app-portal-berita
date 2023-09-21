@@ -34,9 +34,8 @@ class LoggedInContent extends StatelessWidget {
                     width: 70,
                     height: 90,
                   ),
-                  SizedBox(
-                    height: 20,
-                  ),
+                  SizedBox(height: 20,),
+
                   Text(
                     "Selamat Datang Kembali",
                     // Menampilkan nama pengguna dari SharedPreferences
@@ -45,25 +44,22 @@ class LoggedInContent extends StatelessWidget {
                         fontWeight: FontWeight.w500,
                         fontSize: 20),
                   ),
-                  SizedBox(
-                    height: 10,
-                  ),
+                  SizedBox(height: 10,),
+
                   Text(
                     "${prefs.getString('name')}",
                     // Menampilkan nama pengguna dari SharedPreferences
                     style: GoogleFonts.poppins(color: Colors.black, fontSize: 15),
                   ),
-                  SizedBox(
-                    height: 5,
-                  ),
+                  SizedBox(height: 5,),
+
                   Text(
                     "${prefs.getString('email')}",
                     // Menampilkan email pengguna dari SharedPreferences
                     style: GoogleFonts.poppins(color: Colors.black, fontSize: 15),
                   ),
-                  SizedBox(
-                    height: 20,
-                  ),
+                  SizedBox(height: 20,),
+
                   // Tombol logout
                   ElevatedButton(
                     child: Text("Logout"),
@@ -75,15 +71,13 @@ class LoggedInContent extends StatelessWidget {
                         context: context,
                         builder: (context) {
                           return AlertDialog(
-                            title: Text(
-                              "Konfirmasi LogOut",
+                            title: Text("Konfirmasi LogOut",
                               style: GoogleFonts.poppins(
                                 color: Colors.red,
                                 fontWeight: FontWeight.w500,
                               ),
                             ),
-                            content: Text(
-                              "Apakah Anda Yakin ingin Log Out?",
+                            content: Text("Apakah Anda Yakin ingin Log Out?",
                               style: GoogleFonts.poppins(
                                 color: Colors.black,
                               ),
@@ -95,8 +89,7 @@ class LoggedInContent extends StatelessWidget {
                                 onPressed: () {
                                   Navigator.of(context).pop();
                                 },
-                                child: Text(
-                                  "Batal",
+                                child: Text("Batal",
                                   style: GoogleFonts.poppins(
                                     color: Colors.red,
                                   ),
@@ -125,8 +118,7 @@ class LoggedInContent extends StatelessWidget {
                                     ),
                                   );
                                 },
-                                child: Text(
-                                  "Log Out",
+                                child: Text("Log Out",
                                   style: GoogleFonts.poppins(
                                     color: Colors.red,
                                   ),
@@ -138,9 +130,7 @@ class LoggedInContent extends StatelessWidget {
                       );
                     },
                   ),
-                  SizedBox(
-                    height: 30,
-                  ),
+                  SizedBox(height: 30,),
                 ],
               ),
             ),
@@ -219,8 +209,7 @@ class _TerbaruHeaderDelegate extends SliverPersistentHeaderDelegate {
       alignment: Alignment.center,
       child: Column(
         children: [
-          Text(
-            "Pemberitahuan",
+          Text("Pemberitahuan",
             textAlign: TextAlign.center,
             style: GoogleFonts.poppins(
               color: Colors.red,

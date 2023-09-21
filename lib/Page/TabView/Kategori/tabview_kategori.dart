@@ -81,8 +81,7 @@ class _KategoriTabState extends State<KategoriTab> {
                                   child: Center(
                                     child: Text(
                                       widget.listData['data'][index]
-                                              ['nama_kategori'] ??
-                                          "",
+                                              ['nama_kategori'] ?? "",
                                       style: GoogleFonts.roboto(
                                         color: Colors.white,
                                         fontWeight: FontWeight.bold,

@@ -151,41 +151,40 @@ class _SearchPageState extends State<SearchPage> {
                                     ),
                                   ),
                                 ),
-                                SizedBox(
-                                  width: 10,
-                                ),
+                                SizedBox(width: 10,),
+
                                 Expanded(
                                   child: Column(
                                     children: [
                                       Text(
-                                        berita['title'] ??
-                                            'Judul tidak tersedia',
+                                        berita['title'] ?? 'Judul tidak tersedia',
                                         maxLines: 2,
                                         overflow: TextOverflow.ellipsis,
                                         style: GoogleFonts.roboto(
                                             fontSize: 15,
-                                            fontWeight: FontWeight.bold),
+                                            fontWeight: FontWeight.bold,
+                                        ),
                                       ),
-                                      SizedBox(
-                                        height: 10,
-                                      ),
+                                      SizedBox(height: 10,),
+
                                       Row(
                                         mainAxisAlignment:
                                             MainAxisAlignment.spaceBetween,
                                         children: [
-                                          Text(
-                                            berita['author'] ??
+                                          Text(berita['author'] ??
                                                 'Penulis tidak tersedia',
                                             style: GoogleFonts.lato(
                                                 fontSize: 13,
-                                                color: Colors.grey),
+                                                color: Colors.grey,
+                                            ),
                                           ),
                                           Text(
                                             getTimeAgo(berita['created_at']) ??
                                                 'Tanggal tidak tersedia',
                                             style: TextStyle(
                                                 fontSize: 12,
-                                                color: Colors.grey),
+                                                color: Colors.grey,
+                                            ),
                                           ),
                                         ],
                                       )

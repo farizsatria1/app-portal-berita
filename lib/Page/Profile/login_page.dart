@@ -110,18 +110,16 @@ class _LoginPageState extends State<LoginPage> {
                     ),
                   ),
                 ),
-                SizedBox(
-                  height: 30,
-                ),
+                SizedBox(height: 30,),
+
                 Image.asset(
                   "images/agam-logo.png",
                   fit: BoxFit.cover,
                   width: 90,
                   height: 120,
                 ),
-                SizedBox(
-                  height: 25,
-                ),
+                SizedBox(height: 25,),
+
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -130,9 +128,8 @@ class _LoginPageState extends State<LoginPage> {
                             fontWeight: FontWeight.bold,
                             fontSize: 16,
                             color: Colors.red)),
-                    SizedBox(
-                      height: 10,
-                    ),
+                    SizedBox(height: 10,),
+
                     TextField(
                       controller: email,
                       keyboardType: TextInputType.emailAddress,
@@ -150,9 +147,8 @@ class _LoginPageState extends State<LoginPage> {
                     ),
                   ],
                 ),
-                SizedBox(
-                  height: 20,
-                ),
+                SizedBox(height: 20,),
+
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -161,9 +157,8 @@ class _LoginPageState extends State<LoginPage> {
                             fontWeight: FontWeight.bold,
                             fontSize: 16,
                             color: Colors.red)),
-                    SizedBox(
-                      height: 10,
-                    ),
+                    SizedBox(height: 10,),
+
                     TextField(
                       controller: password,
                       obscureText: true,
@@ -181,9 +176,8 @@ class _LoginPageState extends State<LoginPage> {
                     ),
                   ],
                 ),
-                SizedBox(
-                  height: 30,
-                ),
+                SizedBox(height: 30,),
+
                 Container(
                   width: double.infinity,
                   child: ElevatedButton(
@@ -200,14 +194,12 @@ class _LoginPageState extends State<LoginPage> {
                     }, // Panggil fungsi login di sini
                   ),
                 ),
-                SizedBox(
-                  height: 5,
-                ),
+                SizedBox(height: 5,),
+
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(
-                      "Belum memiliki akun ?",
+                    Text("Belum memiliki akun ?",
                       style: TextStyle(color: Colors.black),
                     ),
                     TextButton(
@@ -216,8 +208,7 @@ class _LoginPageState extends State<LoginPage> {
                           builder: (context) => RegisterPage(),
                         ));
                       },
-                      child: Text(
-                        "Daftar",
+                      child: Text("Daftar",
                         style: TextStyle(color: Colors.red),
                       ),
                     )

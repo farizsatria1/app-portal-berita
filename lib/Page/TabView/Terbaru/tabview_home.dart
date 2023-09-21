@@ -116,23 +116,23 @@ class _HomeTabState extends State<HomeTab> {
                               style: GoogleFonts.roboto(
                                   fontSize: 15,
                                   fontWeight: FontWeight.bold,
-                                  color: Colors.black),
+                                  color: Colors.black,
+                              ),
                             ),
-                            SizedBox(
-                              height: 10,
-                            ),
+                            SizedBox(height: 10,),
+
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Text(
                                   data['author'],
                                   style: GoogleFonts.lato(
-                                      fontSize: 13, color: Colors.grey),
+                                      fontSize: 13, color: Colors.grey,
+                                  ),
                                 ),
                                 Text(
                                   getTimeAgo(data['created_at']),
-                                  style:
-                                      TextStyle(fontSize: 12, color: Colors.grey),
+                                  style: TextStyle(fontSize: 12, color: Colors.grey,),
                                 ),
                               ],
                             )
@@ -188,9 +188,8 @@ class _HomeTabState extends State<HomeTab> {
                         ),
                       ),
                     ),
-                    SizedBox(
-                      width: 10,
-                    ),
+                    SizedBox(width: 10,),
+
                     Expanded(
                       child: Column(
                         children: [
@@ -201,21 +200,18 @@ class _HomeTabState extends State<HomeTab> {
                             style: GoogleFonts.roboto(
                                 fontSize: 15, fontWeight: FontWeight.bold),
                           ),
-                          SizedBox(
-                            height: 10,
-                          ),
+                          SizedBox(height: 10,),
+
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Text(
-                                data['author'],
+                              Text(data['author'],
                                 style: GoogleFonts.lato(
-                                    fontSize: 13, color: Colors.grey),
+                                    fontSize: 13, color: Colors.grey,
+                                ),
                               ),
-                              Text(
-                                getTimeAgo(data['created_at']),
-                                style:
-                                    TextStyle(fontSize: 12, color: Colors.grey),
+                              Text(getTimeAgo(data['created_at']),
+                                style: TextStyle(fontSize: 12, color: Colors.grey,),
                               ),
                             ],
                           ),

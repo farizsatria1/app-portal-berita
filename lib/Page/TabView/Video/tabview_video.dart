@@ -119,7 +119,6 @@ class _VideoPageState extends State<VideoPage> {
                           height: 70,
                           decoration: BoxDecoration(
                             color: Colors.white,
-
                           ),
                           child: Text(
                             videoData[index]['title'] ?? '',
@@ -128,7 +127,8 @@ class _VideoPageState extends State<VideoPage> {
                             style: GoogleFonts.roboto(
                                 fontSize: 16,
                                 fontWeight: FontWeight.bold,
-                                color: Colors.black),
+                                color: Colors.black,
+                            ),
                           ),
                         ),
                       ),

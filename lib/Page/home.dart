@@ -55,8 +55,7 @@ class _HomeState extends State<Home> {
           ),
           elevation: 0,
           backgroundColor: Colors.white,
-          title: Text(
-            "Agam",
+          title: Text("Agam",
             style: GoogleFonts.libreBaskerville(
               textStyle: TextStyle(
                 fontWeight: FontWeight.bold,
@@ -72,20 +71,17 @@ class _HomeState extends State<Home> {
             unselectedLabelColor: Colors.grey,
             tabs: [
               Tab(
-                child: Text(
-                  "Terbaru",
+                child: Text("Terbaru",
                   style: GoogleFonts.creteRound(fontSize: 14),
                 ),
               ),
               Tab(
-                child: Text(
-                  "Kategori",
+                child: Text("Kategori",
                   style: GoogleFonts.creteRound(fontSize: 14),
                 ),
               ),
               Tab(
-                child: Text(
-                  "Video",
+                child: Text("Video",
                   style: GoogleFonts.creteRound(fontSize: 14),
                 ),
               ),

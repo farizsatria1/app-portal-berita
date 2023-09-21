@@ -115,8 +115,6 @@ class ApiService {
       throw Exception('Terjadi kesalahan saat melakukan pendaftaran.'); // Pengecualian jika ada kesalahan lain selama proses
     }
   }
-
-
 }
 
 

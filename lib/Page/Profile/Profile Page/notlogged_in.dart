@@ -24,15 +24,13 @@ class NotLoggedInContent extends StatelessWidget {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Image.asset(
-                    "images/agam-logo.png",
+                  Image.asset("images/agam-logo.png",
                     fit: BoxFit.cover,
                     width: 70,
                     height: 90,
                   ),
-                  SizedBox(
-                    height: 20,
-                  ),
+                  SizedBox(height: 20,),
+
                   Container(
                     height: 30,
                     width: 100,
@@ -52,9 +50,8 @@ class NotLoggedInContent extends StatelessWidget {
                       child: Text("Masuk"),
                     ),
                   ),
-                  SizedBox(
-                    height: 5,
-                  ),
+                  SizedBox(height: 5,),
+
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [

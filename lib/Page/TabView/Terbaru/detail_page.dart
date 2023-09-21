@@ -148,9 +148,8 @@ class _DetailPageState extends State<DetailPage> {
                       width: double.infinity,
                       height: 200,
                     ),
-                    SizedBox(
-                      height: 15,
-                    ),
+                    SizedBox(height: 15,),
+
                     Text(
                       detailBerita["title"] ?? "",
                       style: GoogleFonts.roboto(
@@ -158,9 +157,8 @@ class _DetailPageState extends State<DetailPage> {
                         fontSize: 18,
                       ),
                     ),
-                    SizedBox(
-                      height: 10,
-                    ),
+                    SizedBox(height: 10,),
+
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -168,55 +166,47 @@ class _DetailPageState extends State<DetailPage> {
                           children: [
                             Text(
                               detailBerita["author"] ?? "",
-                              style:
-                                  TextStyle(fontSize: 13, color: Colors.grey),
+                              style: TextStyle(fontSize: 13, color: Colors.grey),
                             ),
-                            Text(
-                              " - Agam",
+                            Text(" - Agam",
                               style:
                                   TextStyle(fontSize: 13, color: Colors.grey),
                             ),
                           ],
                         ),
-                        Text(
-                          detailBerita["created_at"] ?? "",
+                        Text(detailBerita["created_at"] ?? "",
                           style: TextStyle(fontSize: 13, color: Colors.grey),
                         ),
                       ],
                     ),
-                    SizedBox(
-                      height: 10,
-                    ),
+                    SizedBox(height: 10,),
+
                     Text(
                       detailBerita["content"] ?? "",
                       style:
-                          GoogleFonts.lora(fontSize: 14, color: Colors.black),
+                          GoogleFonts.lora(fontSize: 14, color: Colors.black,),
                     ),
-                    SizedBox(
-                      height: 30,
-                    ),
+                    SizedBox(height: 30,),
+
                     // Daftar Komentar
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          "Komentar",
+                        Text("Komentar",
                           style: TextStyle(
                             fontSize: 18,
                             fontWeight: FontWeight.bold,
                             color: Colors.red,
                           ),
                         ),
-                        SizedBox(
-                          height: 10,
-                        ),
+                        SizedBox(height: 10,),
+
                         // Textfield untuk komentar
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            SizedBox(
-                              height: 10,
-                            ),
+                            SizedBox(height: 10,),
+
                             TextFormField(
                               maxLines: 3,
                               cursorColor: Colors.red,
@@ -231,9 +221,8 @@ class _DetailPageState extends State<DetailPage> {
                                 ),
                               ),
                             ),
-                            SizedBox(
-                              height: 10,
-                            ),
+                            SizedBox(height: 10,),
+
                             ElevatedButton(
                               style: ElevatedButton.styleFrom(
                                 backgroundColor: Colors.red,
@@ -270,9 +259,8 @@ class _DetailPageState extends State<DetailPage> {
                               },
                               child: Text("Kirim Komentar"),
                             ),
-                            SizedBox(
-                              height: 40,
-                            ),
+                            SizedBox(height: 40,),
+
                           ],
                         ),
                         // List komentar
@@ -284,8 +272,7 @@ class _DetailPageState extends State<DetailPage> {
                               return Center(
                                 heightFactor: 1,
                                 child: CircularProgressIndicator(
-                                    color: Colors.red),
-                              );
+                                    color: Colors.red),);
                             } else {
                               final commentList = commentSnapshot.data;
 
@@ -321,15 +308,13 @@ class _DetailPageState extends State<DetailPage> {
                                                 Text(comment['email'] ?? ""),
                                                 Text(
                                                   getTimeAgo(comment[
-                                                          'created_at']) ??
-                                                      "",
+                                                          'created_at']) ?? "",
                                                   style: TextStyle(
                                                     fontSize: 13,
                                                   ),
                                                 ),
-                                                SizedBox(
-                                                  height: 15,
-                                                ),
+                                                SizedBox(height: 15,),
+
                                                 Text(
                                                   comment['comment'] ?? "",
                                                   style: TextStyle(

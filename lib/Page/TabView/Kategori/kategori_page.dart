@@ -124,9 +124,8 @@ class _KategoriPageState extends State<KategoriPage> {
                               ),
                             ),
                           ),
-                          SizedBox(
-                            width: 10,
-                          ),
+                          SizedBox(width: 10,),
+
                           Expanded(
                             child: Column(
                               children: [
@@ -138,9 +137,8 @@ class _KategoriPageState extends State<KategoriPage> {
                                       fontSize: 15,
                                       fontWeight: FontWeight.bold),
                                 ),
-                                SizedBox(
-                                  height: 10,
-                                ),
+                                SizedBox(height: 10,),
+
                                 Row(
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceBetween,
@@ -152,8 +150,7 @@ class _KategoriPageState extends State<KategoriPage> {
                                     ),
                                     Text(
                                       getTimeAgo(listData[reversedIndex]
-                                              ['created_at'] ??
-                                          ""),
+                                              ['created_at'] ?? ""),
                                       style: TextStyle(
                                           fontSize: 12, color: Colors.grey),
                                     ),
